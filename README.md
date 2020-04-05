@@ -17,15 +17,15 @@ All the endpoints except registration have been secured using Basic Auth impleme
 
 The following endpoints are exposed:
 1. Register a User : Enables a user to register to the system.
-  POST /calendar/registration
+  ```POST /calendar/registration```
 2. Define Slots For A User: A user can define free slots for the day using this API.
-  POST /calendar/defineSlots
+  ```POST /calendar/defineSlots```
 3. Available Slots of a User: This gives all the available slots for the user given his emailId.
-  GET /calendar/availableSlots
+  ```GET /calendar/availableSlots```
 4. Book A Slot: This enables a user to book another user's available slot. This can be done using available slot Ids that can be found in the Available slots API.
-  POST /calendar/bookSlot
+  ```POST /calendar/bookSlot```
 5. Booked Slots: This gives the list of all the booked Slots of a user.
-  GET /calendar/bookedSlots
+  ```GET /calendar/bookedSlots```
   
 # Assumptions
 
